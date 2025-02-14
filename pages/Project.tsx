@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import ProjectCard from "./ProjectCard";
 
 const Project = () => {
@@ -14,27 +15,32 @@ const Project = () => {
         <ProjectCard
           title="E-Commerce website"
           image="/images/p1.PNG"
-          githubLink="https://github.com/Getahun16/Furniture-store" // Add GitHub link
+          githubLink="https://github.com/Getahun16/Furniture-store"
+          liveLink="https://furniture-store-react-project-getahun.netlify.app/"
         />
         <ProjectCard
           title="Car-Rent website"
           image="/images/p2.PNG"
-          githubLink="https://github.com/Getahun16/car__rent_show" // Add GitHub link
+          githubLink="https://github.com/Getahun16/car__rent_show"
+          liveLink="https://car-rent-show-re5gjx333-getahun16s-projects.vercel.app/"
         />
         <ProjectCard
           title="Tomato Website"
           image="/images/tomato.png"
-          githubLink="https://github.com/Getahun16/MERN-Stack-tomato-product-project" // Add GitHub link
+          githubLink="https://github.com/Getahun16/MERN-Stack-tomato-product-project"
+          liveLink="https://tomato-product.vercel.app/"
         />
         <ProjectCard
           title="Food Website"
           image="/images/food.png"
-          githubLink="https://github.com/Getahun16/Next-Foodies-app" // Add GitHub link
+          githubLink="https://github.com/Getahun16/Next-Foodies-app"
+          liveLink="https://food-app-next-js-project.netlify.app/"
         />
         <ProjectCard
           title="Gym Website"
           image="/images/gym.png"
-          githubLink="https://github.com/Getahun16/gym-web-project" // Add GitHub link
+          githubLink="https://github.com/Getahun16/gym-web-project"
+          liveLink="https://gym-website-getahun.netlify.app/"
         />
       </div>
     </div>
