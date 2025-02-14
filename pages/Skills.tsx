@@ -20,7 +20,7 @@ const Skills = () => {
             My Skills
           </p>
           <h1 className="text-4xl font-extrabold text-white leading-tight">
-            Let's Explore{" "}
+            Let&apos;s Explore{" "}
             <span className="text-yellow-400">Popular Skills</span>
           </h1>
           <p className="text-lg text-gray-300 leading-relaxed">

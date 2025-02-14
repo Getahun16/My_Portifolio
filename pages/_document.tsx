@@ -6,8 +6,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* Global Title and Meta Tags */}
-        <title>Getahun - Software Engineer</title>
         <meta name="description" content="Getahun Negash - Software Engineer" />
         <meta name="author" content="Getahun Negash" />
         <link rel="icon" href="/logo.png" />
