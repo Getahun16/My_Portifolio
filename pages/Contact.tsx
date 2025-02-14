@@ -1,10 +1,6 @@
 import React from "react";
-import {
-  FaMapMarkerAlt,
-  FaEnvelope,
-  FaPhone,
-  FaPaperPlane,
-} from "react-icons/fa";
+import Image from "next/image";
+import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -43,34 +39,15 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Right Section - Contact Form */}
-        <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="p-3 bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-yellow-400 transition-all"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="p-3 bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-yellow-400 transition-all"
-            />
-          </div>
-          <input
-            type="text"
-            placeholder="Subject"
-            className="p-3 mt-4 w-full bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-yellow-400 transition-all"
+        {/* Right Section - Contact Image */}
+        <div className="flex justify-center">
+          <Image
+            src="/images/cont.png"
+            alt="Contact Illustration"
+            width={500}
+            height={500}
+            className="rounded-lg shadow-lg"
           />
-          <textarea
-            placeholder="Your Message"
-            className="p-3 mt-4 w-full bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-yellow-400 transition-all"
-            rows={4}
-          ></textarea>
-          <button className="mt-6 w-full py-3 bg-yellow-500 text-white font-semibold rounded-md flex items-center justify-center space-x-2 hover:bg-yellow-600 hover:scale-105 transition-all duration-300">
-            <span>Send Message</span>
-            <FaPaperPlane className="text-lg" />
-          </button>
         </div>
       </div>
     </div>
