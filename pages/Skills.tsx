@@ -2,6 +2,7 @@ import React from "react";
 import SkillCard from "./SkillCard";
 
 const Skills = () => {
+  // Explicitly typing the 'level' property of each skill as a string literal type
   const skills = [
     { title: "HTML", image: "/images/html.svg", level: "Expert" },
     { title: "CSS", image: "/images/css.svg", level: "Expert" },
@@ -9,7 +10,11 @@ const Skills = () => {
     { title: "React", image: "/images/react.svg", level: "Advanced" },
     { title: "TypeScript", image: "/images/ts.svg", level: "Intermediate" },
     { title: "Node.js", image: "/images/node.svg", level: "Intermediate" },
-  ];
+  ] as {
+    title: string;
+    image: string;
+    level: "Beginner" | "Intermediate" | "Advanced" | "Expert";
+  }[]; // Type the entire array
 
   return (
     <div className="py-20 bg-gradient-to-b from-[#0f0f0f] to-black">
