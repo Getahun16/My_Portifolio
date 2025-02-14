@@ -10,26 +10,29 @@ import React from "react";
 
 interface Props {
   title: string;
-  num: string;
+  num: "01" | "02" | "03" | "04" | "05" | "06"; // Explicitly define num as one of these string literals
 }
 
-const iconMapping = {
-  "01": CommandLineIcon, // Step 1: React Website
-  "02": CodeBracketIcon, // Step 2: Next.js
-  "03": CursorArrowRaysIcon, // Step 3: Full-stack
-  "04": ServerIcon, // Step 4: Vue.js
-  "05": RocketLaunchIcon, // Step 5: MERN Stack
-  "06": BugAntIcon, // Step 6: Bug Fixing
+const iconMapping: Record<
+  "01" | "02" | "03" | "04" | "05" | "06",
+  React.ComponentType<any>
+> = {
+  "01": CommandLineIcon,
+  "02": CodeBracketIcon,
+  "03": CursorArrowRaysIcon,
+  "04": ServerIcon,
+  "05": RocketLaunchIcon,
+  "06": BugAntIcon,
 };
 
 // Step-based descriptions
 const descriptionMapping: Record<string, string> = {
-  "01": " Build fast, interactive, and responsive React websites with modern UI/UX principles.",
-  "02": " Leverage Next.js for SEO-friendly, high-performance apps with server-side rendering (SSR).",
+  "01": "Build fast, interactive, and responsive React websites with modern UI/UX principles.",
+  "02": "Leverage Next.js for SEO-friendly, high-performance apps with server-side rendering (SSR).",
   "03": "Develop full-stack applications using React, Node.js, and databases for seamless integration.",
-  "04": " Create dynamic Vue.js applications with reactivity and maintainable architecture.",
+  "04": "Create dynamic Vue.js applications with reactivity and maintainable architecture.",
   "05": "Build scalable MERN stack applications with authentication, APIs, and cloud deployment.",
-  "06": " Debug and optimize performance issues, ensuring smooth and error-free applications.",
+  "06": "Debug and optimize performance issues, ensuring smooth and error-free applications.",
 };
 
 const ServiceCard = ({ num, title }: Props) => {
