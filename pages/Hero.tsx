@@ -24,10 +24,10 @@ const Hero = () => {
               data-aos-delay="800"
               className="mt-[1.2rem] text-[15px] md:text-[17px] text-[#c4cfde]"
             >
-              Hello! I&apos;m Getahun Negash, a dedicated and passionate With a
-              strong emphasis on front-end technologies, I excel in creating
-              dynamic and user-friendly web applications using React.js,
-              TypeScript, Next.js and MERN stack.
+              Hello! Am Getahun Negash, a dedicated and passionate With a strong
+              emphasis on front-end technologies, I excel in creating dynamic
+              and user-friendly web applications using React.js, TypeScript,
+              Next.js and MERN stack.
             </p>
             <div className="mt-[2rem] flex items-center space-x-6">
               <button
