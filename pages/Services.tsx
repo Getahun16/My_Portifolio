@@ -47,7 +47,7 @@ const Services = () => {
           data-anchor-placement="top-center"
           data-aos-delay="1000"
         >
-          <ServiceCard title="Bug Fixing" num="06" />
+          <ServiceCard title="Wordpress development" num="06" />
         </div>
       </div>
     </div>

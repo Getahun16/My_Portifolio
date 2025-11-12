@@ -19,6 +19,26 @@ const Project = () => {
           liveLink="https://furniture-store-react-project-getahun.netlify.app/"
         />
         <ProjectCard
+          title="Dagu Sport"
+          image="/images/dagu.jpg" // Add your image path
+          githubLink="https://github.com/Getahun16 " // Replace with actual repo if different
+          liveLink="https://dagusports.com/" // Replace with live URL
+        />
+
+        <ProjectCard
+          title="Akaki Adventist School"
+          image="/images/mission.jpg" // Add your image path
+          githubLink="https://github.com/Getahun16 " // Replace with actual repo
+          liveLink="https://degantechnologies.com/software/" // Replace with live URL
+        />
+
+        <ProjectCard
+          title="Kerero Furniture"
+          image="/images/kerero.jpg" // Add your image path
+          githubLink="https://github.com/Getahun16 " // Replace with actual repo
+          liveLink="https://ethiopiankidneyassociation.et/furniture/" // Replace with live URL
+        />
+        <ProjectCard
           title="Car-Rent website"
           image="/images/p2.PNG"
           githubLink="https://github.com/Getahun16/car__rent_show"

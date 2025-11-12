@@ -6,6 +6,7 @@ import {
   RocketLaunchIcon,
   ServerIcon,
 } from "@heroicons/react/16/solid";
+import { FaWordpress } from "react-icons/fa";
 import React from "react";
 
 interface Props {
@@ -22,7 +23,7 @@ const iconMapping: Record<
   "03": CursorArrowRaysIcon,
   "04": ServerIcon,
   "05": RocketLaunchIcon,
-  "06": BugAntIcon,
+  "06": FaWordpress,
 };
 
 // Step-based descriptions
@@ -32,7 +33,7 @@ const descriptionMapping: Record<string, string> = {
   "03": "Develop full-stack applications using React, Node.js, and databases for seamless integration.",
   "04": "Create dynamic Vue.js applications with reactivity and maintainable architecture.",
   "05": "Build scalable MERN stack applications with authentication, APIs, and cloud deployment.",
-  "06": "Debug and optimize performance issues, ensuring smooth and error-free applications.",
+  "06": "Develop and customize responsive WordPress websites with plugins, themes, and SEO optimization.",
 };
 
 const ServiceCard = ({ num, title }: Props) => {
