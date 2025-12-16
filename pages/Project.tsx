@@ -72,15 +72,22 @@ const Project = () => {
           My Best <span className="text-yellow-300">Projects</span>
         </h1>
       </div>
-      <div className="pt-[5rem] w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[3rem] items-center">
+      <div className="pt-[5rem] w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[3rem] items-stretch">
         {currentProjects.map((project, index) => (
-          <ProjectCard
+          <div
             key={index}
-            title={project.title}
-            image={project.image}
-            githubLink={project.githubLink}
-            liveLink={project.liveLink}
-          />
+            data-aos="fade-up"
+            data-aos-delay={index * 100}
+            data-aos-anchor-placement="top-center"
+            className="h-full"
+          >
+            <ProjectCard
+              title={project.title}
+              image={project.image}
+              githubLink={project.githubLink}
+              liveLink={project.liveLink}
+            />
+          </div>
         ))}
       </div>
 
