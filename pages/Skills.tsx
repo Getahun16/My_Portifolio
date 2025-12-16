@@ -6,16 +6,16 @@ const Skills = () => {
   const skills = [
     { title: "Wordpress", image: "/images/wordpress.webp", level: "Expert" },
     { title: "HTML", image: "/images/html.svg", level: "Expert" },
-    { title: "CSS", image: "/images/css.svg", level: "Expert" },
+    { title: "Tailwind", image: "/images/tailw.png", level: "Expert" },
     { title: "JavaScript", image: "/images/js.svg", level: "Advanced" },
     { title: "React", image: "/images/react.svg", level: "Advanced" },
     { title: "Next.js", image: "/images/nextjs.webp", level: "Advanced" },
-    { title: "TypeScript", image: "/images/ts.svg", level: "Intermediate" },
+    { title: "TypeScript", image: "/images/ts.svg", level: "Advanced" },
     { title: "Node.js", image: "/images/node.svg", level: "Intermediate" },
-    { title: "MySQL", image: "/images/mysql.png", level: "Intermediate" },
+    { title: "MySQL", image: "/images/mysql.png", level: "Advanced" },
     { title: "MongoDB", image: "/images/mongo.png", level: "Intermediate" },
     { title: "Vue.js", image: "/images/vue.png", level: "Advanced" },
-    { title: "Laravel", image: "/images/laravel.png", level: "Intermediate" },
+    { title: "Laravel", image: "/images/laravel.png", level: "Advanced" },
   ] as {
     title: string;
     image: string;
