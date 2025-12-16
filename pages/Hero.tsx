@@ -37,7 +37,7 @@ const Hero = () => {
               >
                 <span className="relative z-10">Hire Me</span>
               </button>
-              <Link href="/images/gcv.pdf" download="CV" target="_blank">
+              <Link href="/images/gechcv.pdf" download="CV" target="_blank">
                 <button
                   data-aos="zoom-out"
                   data-aos-delay="1600"

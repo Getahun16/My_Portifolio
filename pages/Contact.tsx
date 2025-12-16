@@ -39,15 +39,57 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Right Section - Contact Image */}
-        <div className="flex justify-center">
-          <Image
-            src="/images/cont.png"
-            alt="Contact Illustration"
-            width={500}
-            height={500}
-            className="rounded-lg shadow-lg"
-          />
+        {/* Right Section - Contact Form */}
+        <div className="bg-[#111] p-8 rounded-xl shadow-lg">
+          <form className="space-y-5">
+            {/* Name */}
+            <div>
+              <label className="block text-gray-300 mb-1">Name</label>
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="w-full px-4 py-3 bg-gray-800 text-white rounded-lg outline-none focus:ring-2 focus:ring-yellow-400"
+              />
+            </div>
+
+            {/* Email */}
+            <div>
+              <label className="block text-gray-300 mb-1">Email</label>
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="w-full px-4 py-3 bg-gray-800 text-white rounded-lg outline-none focus:ring-2 focus:ring-yellow-400"
+              />
+            </div>
+
+            {/* Subject */}
+            <div>
+              <label className="block text-gray-300 mb-1">Subject</label>
+              <input
+                type="text"
+                placeholder="Subject"
+                className="w-full px-4 py-3 bg-gray-800 text-white rounded-lg outline-none focus:ring-2 focus:ring-yellow-400"
+              />
+            </div>
+
+            {/* Message */}
+            <div>
+              <label className="block text-gray-300 mb-1">Message</label>
+              <textarea
+                rows={5}
+                placeholder="Your Message"
+                className="w-full px-4 py-3 bg-gray-800 text-white rounded-lg outline-none focus:ring-2 focus:ring-yellow-400"
+              ></textarea>
+            </div>
+
+            {/* Submit Button */}
+            <button
+              type="submit"
+              className="w-full bg-yellow-400 text-black font-bold py-3 rounded-lg hover:bg-yellow-300 transition"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
       </div>
     </div>
