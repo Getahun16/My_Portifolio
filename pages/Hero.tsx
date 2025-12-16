@@ -15,7 +15,7 @@ const Hero = () => {
             </h1>
             <div data-aos="fade-left" data-aos-delay="400">
               <h1 className="xl:text-[50px] lg:text-[40px] sm:text-[35px]  text-[25px] font-semibold leading-[2.6rem] text-white">
-                Hi, Am <span className="text-yellow-300">Getahun</span>
+                Hi, I’m <span className="text-yellow-300">Getahun</span>
               </h1>
               <TypeWriterEffect />
             </div>
@@ -24,20 +24,15 @@ const Hero = () => {
               data-aos-delay="800"
               className="mt-[1.2rem] text-[15px] md:text-[17px] text-[#c4cfde]"
             >
-              Hello! Am Getahun Negash, a dedicated and passionate With a strong
-              emphasis on front-end technologies, I excel in creating dynamic
-              and user-friendly web applications using React.js, TypeScript,
-              Next.js and MERN stack.
+              Welcome! Make yourself at home as you explore my work. I’m a
+              WordPress Expert and Senior Full-Stack Software Developer with a
+              proven track record of delivering high-quality, scalable, and
+              user-focused solutions. I build modern, fast, and secure websites
+              and web applications, turning ideas into reliable digital products
+              you can trust.
             </p>
             <div className="mt-[2rem] flex items-center space-x-6">
-              <button
-                data-aos="zoom-in"
-                data-aos-delay="1200"
-                className="relative flex h-[50px] w-40 items-center justify-center font-semibold overflow-hidden bg-red-500 text-white shadow-2xl transition-all before:absolute before:h-0 before:w before:rounded-full before:bg-blue-600 before:duration-500 before:ease-in hover:before:h-56  hover:before:w-56"
-              >
-                <span className="relative z-10">Hire Me</span>
-              </button>
-              <Link href="/images/gechcv.pdf" download="CV" target="_blank">
+              <Link href="/images/geta.pdf" download="CV" target="_blank">
                 <button
                   data-aos="zoom-out"
                   data-aos-delay="1600"
@@ -54,10 +49,10 @@ const Hero = () => {
             className="hidden md:block"
           >
             <Image
-              src="/images/gech-bg.png"
+              src="/images/getah.jpg"
               alt="image"
-              width={300}
-              height={350}
+              width={450}
+              height={600}
               className="object-contain "
             />
           </div>

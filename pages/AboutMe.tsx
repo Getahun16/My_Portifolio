@@ -12,10 +12,11 @@ const AboutMe = () => {
             your business
           </h1>
           <p className="text-[15px] mt-[1.3rem] text-white opacity-75 max-w-[450px] mx-auto">
-            As a full stack developer, I am a versatile programmer who can work
-            on both the front-end and back-end of a web application. I possess a
-            broad skill set that encompasses both client-side and server-side
-            development.
+            I’m a Senior Full-Stack Developer and WordPress Expert with
+            experience in custom WordPress development, React, Next.js, and the
+            MERN stack. I specialize in building scalable, secure, and
+            user-friendly web applications, delivering high-performing digital
+            solutions that transform ideas into reality.
           </p>
           <div className="mt-[2rem] space-y-3">
             <div className="flex items-center space-x-4">
@@ -28,7 +29,7 @@ const AboutMe = () => {
             </div>
             <div className="flex items-center space-x-4">
               <CheckIcon className="w-[2rem] h-[2rem] text-yellow-400" />
-              <p className="text-[18px] text-white">Web Development</p>
+              <p className="text-[18px] text-white">WordPress Development</p>
             </div>
             <div
               data-aos="zoom-in"

@@ -16,6 +16,7 @@ const SkillCard = ({ title, image, level }: SkillProps) => {
         width={48}
         height={48}
         className="mx-auto w-10 h-10 sm:w-14 sm:h-14"
+        draggable={false}
       />
       <h2 className="text-white text-sm sm:text-base font-semibold mt-2 sm:mt-3">
         {title}

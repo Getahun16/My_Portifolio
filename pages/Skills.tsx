@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import SkillCard from "./SkillCard";
 
 const Skills = () => {
@@ -24,6 +24,8 @@ const Skills = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerSlide, setItemsPerSlide] = useState(3);
+  const isPausedRef = useRef(false);
+  const autoplayIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const updateItemsPerSlide = () => {
@@ -52,6 +54,24 @@ const Skills = () => {
     currentIndex * itemsPerSlide + itemsPerSlide
   );
 
+  // Autoplay: advance slides every 4s, pause on hover
+  useEffect(() => {
+    if (autoplayIntervalRef.current) {
+      clearInterval(autoplayIntervalRef.current);
+    }
+    autoplayIntervalRef.current = setInterval(() => {
+      if (!isPausedRef.current) {
+        setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
+      }
+    }, 4000);
+
+    return () => {
+      if (autoplayIntervalRef.current) {
+        clearInterval(autoplayIntervalRef.current);
+      }
+    };
+  }, [maxIndex]);
+
   return (
     <div className="py-20 bg-gradient-to-b from-[#0f0f0f] to-black">
       <div className="max-w-6xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-7 gap-12 items-center">
@@ -75,7 +95,15 @@ const Skills = () => {
 
         {/* Right Section - Skill Carousel */}
         <div className="col-span-4 mr-5  ">
-          <div className="relative">
+          <div
+            className="relative"
+            onMouseEnter={() => {
+              isPausedRef.current = true;
+            }}
+            onMouseLeave={() => {
+              isPausedRef.current = false;
+            }}
+          >
             {/* Carousel Container with side padding to avoid arrow overlap */}
             <div className="overflow-hidden px-6 sm:px-8 lg:px-10">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 transition-all duration-500">
