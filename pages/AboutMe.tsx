@@ -8,8 +8,7 @@ const AboutMe = () => {
         <div>
           <p className="heading__mini text-yellow-400">About Me</p>
           <h1 className="heading__primary text-white">
-            Professional <span className="text-yellow-400">Website</span> for
-            your business
+            Full-Stack Expertise for Modern Web & WordPress Development
           </h1>
           <p className="text-[15px] mt-[1.3rem] text-white opacity-75 max-w-[450px] mx-auto">
             I’m a Senior Full-Stack Developer and WordPress Expert with
@@ -43,11 +42,11 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="lg:ml-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-[2rem]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-stretch gap-[2rem]">
             <div
               data-aos="zoom-in"
               data-aos-anchor-placement="top-center"
-              className="p-6 text-center bg-yellow-500 rounded-lg shadow-lg"
+              className="p-6 text-center bg-yellow-500 rounded-lg shadow-lg h-full min-h-[10rem] flex flex-col justify-center"
             >
               <p className="text-[40px] text-black font-bold">2+</p>
               <p className="text-[20px] text-black font-semibold">
@@ -58,7 +57,7 @@ const AboutMe = () => {
               data-aos="zoom-in"
               data-aos-delay="200"
               data-aos-anchor-placement="top-center"
-              className="p-6 text-center bg-yellow-500 rounded-lg shadow-lg"
+              className="p-6 text-center bg-yellow-500 rounded-lg shadow-lg h-full min-h-[10rem] flex flex-col justify-center"
             >
               <p className="text-[40px] text-black font-bold">6</p>
               <p className="text-[20px] text-black font-semibold">
@@ -69,7 +68,7 @@ const AboutMe = () => {
               data-aos="zoom-in"
               data-aos-delay="400"
               data-aos-anchor-placement="top-center"
-              className="p-6 text-center bg-yellow-500 rounded-lg shadow-lg"
+              className="p-6 text-center bg-yellow-500 rounded-lg shadow-lg h-full min-h-[10rem] flex flex-col justify-center"
             >
               <p className="text-[40px] text-black font-bold">13+</p>
               <p className="text-[20px] text-black font-semibold">
@@ -80,7 +79,7 @@ const AboutMe = () => {
               data-aos="zoom-in"
               data-aos-delay="600"
               data-aos-anchor-placement="top-center"
-              className="p-6 text-center bg-yellow-500 rounded-lg shadow-lg"
+              className="p-6 text-center bg-yellow-500 rounded-lg shadow-lg h-full min-h-[10rem] flex flex-col justify-center"
             >
               <p className="text-[40px] text-black font-bold">3</p>
               <p className="text-[20px] text-black font-semibold">Awards Won</p>
